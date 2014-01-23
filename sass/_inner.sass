@@ -55,6 +55,9 @@
 			height: 28px
 			background: none 
 			font-size: 0
+	.loader
+		float: left
+		margin-right: 100px 
 .filter__search-result
 	float: left
 	margin-top: 5px
@@ -88,35 +91,184 @@
 		.ico_del
 			+s(ico-del-h)
 .filter__drop
-	padding: 12px 15px
+	display: table
+	width: 100%
 	background: #e0f1f7
 	border-radius:  0 0 5px 5px
-	+clr
+	table-layout: fixed
 .filter__row
+	display: table-row
+	& + .filter__row
+		.filter__cell
+			padding: 5px 15px 12px
+.filter__cell
+	display: table-cell
+	width: 100%
+	height: 36px
+	padding: 12px 15px
+	vertical-align: middle
 	font-size: 0
-	+clr
-	.field, .checkbox
+	> .field, > .checkbox, > .select
 		margin-right: 25px
-	.btn-blue
+	> .btn-blue
 		float: right
 		width: 140px
 	.select
 		.checkbox
+			margin: 0 
+.filter__row_mod
+	padding: 8px 0
+.filter__default
+	float: right
+	button
+		height: 28px
+		background: none
+		color: $blue
+		&:hover
+			text-decoration: underline
+			color: $hover 
+
+
+
+
+.table
+	border-radius: 5px
+	box-shadow: 0 1px 1px rgba(0,0,0,.3)
+.table__in
+	display: table
+	width: 100%
+	border-spacing: 0
+	border-collapse: separate
+.table__row
+	display: table-row
+	&:nth-child(2n+1)
+		.table__cell	
+			background: #F7F7F7 
+	&.table__row_head
+		.table__cell
+			height: 33px
+			padding: 0 7px
+			font-weight: 600 
+			text-align: center
+			border-bottom: 1px solid #e0e0e0
+			background-color: #f3d3a9
+			+background-image(linear-gradient(bottom, #e7e7e7 0%, #fdfdfd 100%))
+			vertical-align: middle
+			white-space: nowrap
+			&:first-child
+				border-radius: 5px 0 0 0
+			&:last-child
+				border-radius: 0 5px 0 0
+			.ico
+				position: relative
+				top: -2px
+				margin-right: 7px
+.table__cell
+	display: table-cell
+	padding: 12px
+	background: #FFF 
+	border-bottom: 1px solid #e0e0e0
+	&:first-child
+		padding: 12px 12px 12px 26px 
+.table__cell_center
+	text-align: center
+	vertical-align: middle
+.table__prize, .table__green, .table__red, .table__black
+	margin-bottom: 15px
+.table__green
+	color: #4B933F
+.table__red
+	color: #ed5565 
+.table__text
+	margin-bottom: 10px
+	line-height: 1.2
+.table__date, .table__user
+	+clr
+	.el-with-ico
+		float: right
+		margin-left: 15px
+		&:first-child
+			float: left
 			margin: 0
+.table__date
+	margin-bottom: 5px
+.table__user
+	margin-bottom: 10px
+.table__pics
+	font-size: 0
+	li
+		position: relative
+		display: inline-block
+		margin: 0 4px 4px 0
+		vertical-align: top
+		> img
+			position: absolute
+			left: 30px
+			bottom: 20px
+			display: none 
+		&:hover
+			z-index: 2 
+			> img
+				display: block
+	img
+		display: block
+		border: 1px solid #d3d3d3
+.table__pager
+	padding: 20px 25px
+	background: #FFF 
+	border-radius: 0 0 5px 5px
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+.cats
+	margin-bottom: 15px 
+	border-radius: 5px
+	box-shadow: 0 1px 1px rgba(0,0,0,.3)
+	border-radius: 5px
+.cats__title
+	padding: 7px
+	font-weight: 600 
+	text-align: center
+	background-color: #f3d3a9
+	border-radius: 5px 5px 0 0
+	+background-image(linear-gradient(bottom, #e7e7e7 0%, #fdfdfd 100%))
+.cats__list
+	background: #FFF
+	border-radius: 0 0 5px 5px 
+	li
+		border-top: 1px solid #cfd0d1 
+		&.is-active
+			>	a
+				background-color: #e7f7fb
+				box-shadow: 0 1px 2px rgba(36,119,143,.5)
+				color: $font
+				cursor: default
+		li
+			a
+				padding: 10px 20px 10px 30px
+				background: #ededed
+			&:hover, &.is-active
+				a
+					background: #F7F7F7  
+			&.is-active
+				a
+					position: relative
+					box-shadow: 0 -1px 1px rgba(36,119,143,.5) inset
+					&:before
+						content: ""
+						position: absolute
+						top: 14px
+						left: 10px
+						+s(cats-arr-left)
+	a
+		display: block
+		padding: 10px 20px 
+		text-decoration: none 
+		color: $font 
+		&:hover
+			background-color: #e7f7fb
+			color: $hover 
+	.cats__list-sub
 
 
 
