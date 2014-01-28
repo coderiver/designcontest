@@ -36,6 +36,42 @@
 		</div>
 	</div>
 	<div class="filter">
+		<div class="filter__categories is-open">
+			<div class="filter__categories-in">
+				<div class="filter__categories-btn">
+					<button class="btn btn_spec">
+					<span class="btn__block">
+						<i class="ico ico_list"></i>
+					</span>
+					<span class="btn__text">Design categories</span>
+					<i class="ico ico_arr-down"></i>
+				</button>
+				</div>
+				<div class="cats">
+					<ul class="cats__list">
+						<li><a href="#">Link</a></li>
+						<li class="is-active"><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li class="is-active">
+							<a href="#">Link</a>
+							<ul>
+								<li><a href="#">Sub link</a></li>
+								<li class="is-active"><a href="#">Sub link</a></li>
+								<li><a href="#">Sub link</a></li>
+								<li><a href="#">Sub link</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+			</div>
+			<button class="filter__clear">
+				<i class="ico ico_del"></i>
+				<span>Clear</span>
+			</button>
+		</div>
 		<div class="filter__in">
 			<div class="filter__btn filter__btn_first">
 				<button class="btn btn_spec">
@@ -101,112 +137,124 @@
 		<div class="filter__drop">
 			<div class="filter__row">
 				<div class="filter__cell">
-					<label class="field field_small">
-						<span class="field__label">Prize:</span>
-						<span class="field__el"><input type="text" placeholder="min"></span>
-						<span class="field__el"><input type="text" placeholder="max"></span>
-					</label>
-					<div class="field">
-						<span class="field__label">Deadline:</span>
-						<div class="select">
-							<div class="select__in">
-								<div class="select__head">
-									<div class="select__head-in">
-										<div class="select__title">All</div>
+					<div class="filter__prize">
+						<label class="field field_small">
+							<span class="field__label">Prize:</span>
+							<span class="field__el"><input type="text" placeholder="min"></span>
+							<span class="field__el"><input type="text" placeholder="max"></span>
+						</label>
+					</div>
+					<div class="filter__deadline">
+						<div class="field">
+							<span class="field__label">Deadline:</span>
+							<div class="select">
+								<div class="select__in">
+									<div class="select__head">
+										<div class="select__head-in">
+											<div class="select__title">All</div>
+										</div>
+										<div class="select__arr"><i></i></div>
 									</div>
-									<div class="select__arr"><i></i></div>
+									<ul class="select__list">
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>< 1 day</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox" checked>
+												<span>2 - 3 days</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>3 - 7 days</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>> 7 days</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>all</span>
+											</label>
+										</li>
+									</ul>
 								</div>
-								<ul class="select__list">
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>< 1 day</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox" checked>
-											<span>2 - 3 days</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>3 - 7 days</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>> 7 days</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>all</span>
-										</label>
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="field">
-						<span class="field__label">Status:</span>
-						<div class="select is-open">
-							<div class="select__in">
-								<div class="select__head">
-									<div class="select__head-in">
-										<ul class="select__head-list">
-											<li>2 - 3<i></i></li>
-											<li>3 - 7<i></i></li>
-										</ul>
+					<div class="filter__status">
+						<div class="field">
+							<span class="field__label">Status:</span>
+							<div class="select is-open">
+								<div class="select__in">
+									<div class="select__head">
+										<div class="select__head-in">
+											<ul class="select__head-list">
+												<li>2 - 3<i></i></li>
+												<li>3 - 7<i></i></li>
+											</ul>
+										</div>
+										<div class="select__arr"><i></i></div>
 									</div>
-									<div class="select__arr"><i></i></div>
+									<ul class="select__list">
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>< 1 day</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox" checked>
+												<span>2 - 3 days</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>3 - 7 days</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>> 7 days</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>all</span>
+											</label>
+										</li>
+									</ul>
 								</div>
-								<ul class="select__list">
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>< 1 day</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox" checked>
-											<span>2 - 3 days</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>3 - 7 days</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>> 7 days</span>
-										</label>
-									</li>
-									<li>
-										<label class="checkbox">
-											<input type="checkbox">
-											<span>all</span>
-										</label>
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>
-					<label class="checkbox checkbox_vert">
-						<input type="checkbox" checked>
-						<span>Blind</span>
-					</label>
-					<label class="checkbox checkbox_vert">
-						<input type="checkbox">
-						<span>Guaranteed</span>
-					</label>
+					<div class="filter__checkboxes">
+						<label class="checkbox checkbox_vert">
+							<input type="checkbox" checked>
+							<span>Blind</span>
+						</label>
+						<label class="checkbox checkbox_vert">
+							<input type="checkbox">
+							<span>Guaranteed</span>
+						</label>
+					</div>
+					<button class="filter__clear">
+						<i class="ico ico_del"></i>
+						<span>Clear</span>
+					</button>
 					<button class="btn-blue">Apply</button>
 				</div>
 			</div>
@@ -214,7 +262,7 @@
 	</div>
 	<div class="filter">
 		<div class="filter__in">
-			<div class="filter__btn filter__btn_first">
+			<div class="filter__btn filter__btn_first is-active">
 				<button class="btn btn_spec">
 					<span class="btn__block">
 						<i class="ico ico_stick"></i>
@@ -223,17 +271,13 @@
 					<i class="ico ico_arrs-down"></i>
 				</button>
 			</div>
-			<div class="filter__btn is-active">
+			<div class="filter__btn">
 				<button class="btn btn_spec">
 					<span class="btn__block">
 						<i class="ico ico_filter"></i>
 					</span>
 					<span class="btn__text">Filters</span>
 					<i class="ico ico_arrs-top"></i>
-				</button>
-				<button class="filter__clear">
-					<i class="ico ico_del"></i>
-					<span>Clear</span>
 				</button>
 			</div>
 			<div class="filter__search filter__search_right">
@@ -246,7 +290,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="filter__drop">
+		<div class="filter__drop filter__drop_list">
 			<div class="filter__row">
 				<div class="filter__cell">
 					<label class="checkbox">
@@ -385,11 +429,11 @@
 				<div class="table__in">
 					<div class="table__row table__row_head">
 						<div class="table__cell"><button class="ico ico_sort-down"></button><span>Contest info</span></div>
-						<div class="table__cell"><button class="ico ico_sort-top"></button><span>Entries</span></div>
+						<div class="table__cell table__cell_rt"><button class="ico ico_sort-top"></button><span>Entries</span></div>
 						<div class="table__cell"><span>Prize</span></div>
-						<div class="table__cell"><span>Status</span></div>
+						<div class="table__cell table__cell_rt"><span>Status</span></div>
 					</div>
-					<div class="table__row">
+					<div class="table__row table__row_blue">
 						<div class="table__cell">
 							<div class="title title_level-2"><div class="label label_blue">Label blue</div><a href="#">Xinviscid Consulting a consulting</a></div>
 							<div class="table__text">
@@ -413,12 +457,14 @@
 								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
 							</ul>
 						</div>
-						<div class="table__cell table__cell_center">211</div>
+						<div class="table__cell table__cell_rt table__cell_center">211</div>
 						<div class="table__cell table__cell_center">
-							<div class="table__prize">AU$ 80 000</div>
-							<div class="label label_green">гарантированы</div>
+							<div class="table__prize table__prize_rt">AU$ 80 000</div>
+							<div class="label label_green label_prize-rt">AU$ 80 000</div>
+							<div class="label label_green label_rt">гарантированы</div>
+							<div class="table__black table__black_rt">ends in<span>3d 2h</span></div>
 						</div>
-						<div class="table__cell table__cell_center">
+						<div class="table__cell table__cell_rt table__cell_center">
 							<div class="table__green">ends in 3d 2h</div>
 							<button class="btn"><i class="ico ico_follow"></i><span class="btn__text">follow</span></button>
 						</div>
@@ -434,37 +480,15 @@
 								<div class="el-with-ico"><i class="ico ico_date"></i><span>12/13/14</span></div>
 							</div>
 						</div>
-						<div class="table__cell table__cell_center">211</div>
+						<div class="table__cell table__cell_rt table__cell_center">211</div>
 						<div class="table__cell table__cell_center">
 							<div class="table__prize">AU$ 80 000</div>
-							<div class="label label_green">гарантированы</div>
+							<div class="label label_green label_rt">гарантированы</div>
+							<div class="table__black table__black_rt">ends in<span>3d 2h</span></div>
 						</div>
-						<div class="table__cell table__cell_center">
+						<div class="table__cell table__cell_rt table__cell_center">
 							<div class="table__red">ends in 3d 2h</div>
 							<button class="btn"><i class="ico ico_follow"></i><span class="btn__text">follow</span></button>
-						</div>
-					</div>
-					<div class="table__row">
-						<div class="table__cell">
-							<div class="title title_level-2"><a href="#">Xinviscid Consulting a consulting</a></div>
-							<div class="table__text">
-								<p>We are re-launching a consulting firm called Inviscid Consulting. Our old logo is shown below, but we'd like to refresh our brand</p>
-							</div>
-							<div class="table__date">
-								<div class="el-with-ico"><i class="ico ico_block"></i><a href="#">Contesretholdername</a></div>
-								<div class="el-with-ico"><i class="ico ico_date"></i><span>12/13/14</span></div>
-							</div>
-						</div>
-						<div class="table__cell table__cell_center">211</div>
-						<div class="table__cell table__cell_center">
-							<div class="table__prize">
-								<div class="el-with-ico"><i class="ico ico_prize"></i><span>$1500</span></div>
-							</div>
-							<div class="label label_green">гарантированы</div>
-						</div>
-						<div class="table__cell table__cell_center">
-							<div class="table__black">ends in 3d 2h</div>
-							<button class="el-with-ico el-with-ico_btn"><span>follow</span><i class="ico ico_close"></i></button>
 						</div>
 					</div>
 					<div class="table__row">
@@ -478,12 +502,142 @@
 								<div class="el-with-ico"><i class="ico ico_date"></i><span>12/13/14</span></div>
 							</div>
 						</div>
-						<div class="table__cell table__cell_center">211</div>
+						<div class="table__cell table__cell_rt table__cell_center">211</div>
 						<div class="table__cell table__cell_center">
 							<div class="table__prize">AU$ 80 000</div>
-							<div class="label label_green">гарантированы</div>
+							<div class="label label_green label_rt">гарантированы</div>
+							<div class="table__black table__black_rt">ends in<span>3d 2h</span></div>
 						</div>
+						<div class="table__cell table__cell_rt table__cell_center">
+							<div class="table__red">ends in 3d 2h</div>
+							<button class="btn"><i class="ico ico_follow"></i><span class="btn__text">follow</span></button>
+						</div>
+					</div>
+					<div class="table__row">
+						<div class="table__cell">
+							<div class="title title_level-2"><a href="#">Xinviscid Consulting a consulting</a></div>
+							<div class="table__date">
+								<div class="el-with-ico"><i class="ico ico_eye-throw"></i><a href="#">Contesretholdername</a></div>
+								<div class="el-with-ico"><i class="ico ico_date"></i><span>12/13/14</span></div>
+							</div>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">211</div>
 						<div class="table__cell table__cell_center">
+							<div class="table__prize">AU$ 80 000</div>
+							<div class="table__black table__black_rt">ends in<span>3d 2h</span></div>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">
+							<div class="table__red">ends in 3d 2h</div>
+						</div>
+					</div>
+					<div class="table__row table__row_blue">
+						<div class="table__cell">
+							<div class="title title_level-2"><a href="#">Xinviscid Consulting a consulting</a></div>
+							<div class="table__text">
+								<p>We are re-launching a consulting firm called Inviscid Consulting. Our old logo is shown below, but we'd like to refresh our brand</p>
+							</div>
+							<div class="table__date">
+								<div class="el-with-ico"><i class="ico ico_eye-throw"></i><a href="#">Contesretholdername</a></div>
+								<div class="el-with-ico"><i class="ico ico_date"></i><span>12/13/14</span></div>
+							</div>
+							<div class="table__user">
+								<div class="el-with-ico"><i class="ico ico_user js-ttip"></i><a href="#">Contesretholdername</a></div>
+								<div class="el-with-ico"><i class="ico ico_arr-circle"></i><span>10%</span></div>
+								<div class="el-with-ico"><i class="ico ico_comm"></i><span>$1500</span></div>
+							</div>
+							<ul class="table__pics">
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+							</ul>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">211</div>
+						<div class="table__cell table__cell_center">
+							<div class="table__prize">AU$ 80 000</div>
+							<div class="label label_green label_rt">гарантированы</div>
+							<div class="table__black table__black_rt">ends in<span>3d 2h</span></div>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">
+							<div class="table__red">ends in 3d 2h</div>
+							<button class="btn"><i class="ico ico_follow"></i><span class="btn__text">follow</span></button>
+						</div>
+					</div>
+					<div class="table__row">
+						<div class="table__cell">
+							<div class="title title_level-2"><a href="#">Xinviscid Consulting a consulting</a></div>
+							<div class="table__text">
+								<p>We are re-launching a consulting firm called Inviscid Consulting. Our old logo is shown below, but we'd like to refresh our brand</p>
+							</div>
+							<div class="table__date">
+								<div class="el-with-ico"><i class="ico ico_eye-throw"></i><a href="#">Contesretholdername</a></div>
+								<div class="el-with-ico"><i class="ico ico_date"></i><span>12/13/14</span></div>
+							</div>
+							<div class="table__user">
+								<div class="el-with-ico"><i class="ico ico_user js-ttip"></i><a href="#">Contesretholdername</a></div>
+								<div class="el-with-ico"><i class="ico ico_arr-circle"></i><span>10%</span></div>
+								<div class="el-with-ico"><i class="ico ico_comm"></i><span>$1500</span></div>
+							</div>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">211</div>
+						<div class="table__cell table__cell_center">
+							<div class="table__prize">AU$ 80 000</div>
+							<div class="label label_green label_rt">гарантированы</div>
+							<div class="table__black table__black_rt">ends in<span>3d 2h</span></div>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">
+							<div class="table__red">ends in 3d 2h</div>
+							<button class="btn"><i class="ico ico_follow"></i><span class="btn__text">follow</span></button>
+						</div>
+					</div>
+					<div class="table__row">
+						<div class="table__cell">
+							<div class="title title_level-2"><a href="#">Xinviscid Consulting a consulting</a></div>
+							<div class="table__text">
+								<p>We are re-launching a consulting firm called Inviscid Consulting. Our old logo is shown below, but we'd like to refresh our brand</p>
+							</div>
+							<div class="table__date">
+								<div class="el-with-ico"><a href="#">Contesretholdername</a></div>
+								<div class="el-with-ico"><i class="ico ico_date"></i><span>12/13/14</span></div>
+							</div>
+							<ul class="table__pics">
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+								<li><a href="#"><img src="http://placehold.it/50x40" alt=""></a><img src="http://placehold.it/200x150" alt=""></li>
+							</ul>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">211</div>
+						<div class="table__cell table__cell_center">
+							<div class="table__prize">
+								<div class="el-with-ico"><i class="ico ico_prize"></i><span>$1500</span></div>
+							</div>
+							<div class="table__black table__black_rt">ends in<span>3d 2h</span></div>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">
+							<div class="table__black table__black_rt">ends in<span>3d 2h</span></div>
+							<button class="el-with-ico el-with-ico_btn"><span>follow</span><i class="ico ico_close"></i></button>
+						</div>
+					</div>
+					<div class="table__row">
+						<div class="table__cell">
+							<div class="title title_level-2"><a href="#">Xinviscid Consulting a consulting</a></div>
+							<div class="table__date">
+								<div class="el-with-ico"><i class="ico ico_block"></i><a href="#">Contesretholdername</a></div>
+								<div class="el-with-ico"><i class="ico ico_date"></i><span>12/13/14</span></div>
+							</div>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">211</div>
+						<div class="table__cell table__cell_center">
+							<div class="table__prize">AU$ 80 000</div>
+							<div class="label label_green label_rt">гарантированы</div>
+							<div class="table__black table__black_rt">ends in<span>3d 2h</span></div>
+						</div>
+						<div class="table__cell table__cell_rt table__cell_center">
 							<div class="table__red">ends in 3d 2h</div>
 							<button class="btn"><i class="ico ico_follow"></i><span class="btn__text">follow</span></button>
 						</div>
@@ -497,6 +651,7 @@
 							<a href="#">120</a>
 						</div>
 						<div class="pager__list">
+							<a class="pager__back" href="#">back<i></i></a>
 							<a class="is-active" href="#">1</a>
 							<a href="#">2</a>
 							<a href="#">3</a>
@@ -549,7 +704,7 @@
 </div>
 <!-- END l-center-->
 
-<div class="ttip" style="top: 600px; left: 500px;">
+<div class="ttip" style="top: 600px; left: 50px;">
 	<div class="ttip__in">
 		<p>Blind contest.</p>
 		<br>

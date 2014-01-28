@@ -44,6 +44,12 @@ $blue: #159bbe
 $hover: #0a96bb
 $red: #b04242
 $font: #2f323b
+
+//media query
+@mixin rt($media)
+	@if $media
+		@media only screen and (max-width: $media+'px')
+			@content
 	
 body
 	background: #f2f2f2 
@@ -75,6 +81,7 @@ a
 		
 .title
 	font-weight: 600 
+	line-height: 1
 	a, span
 		vertical-align: middle
 	.label
@@ -87,6 +94,9 @@ a
 .l-center
 	width: 960px
 	margin: 0 auto
+	+rt(480)
+		width: auto
+		padding: 0 5px
 
 .btn
 	position: relative
@@ -121,7 +131,7 @@ a
 		background-color: #434753
 		+background-image(linear-gradient(bottom, #434753 0%, #434753 0.51%, #595b67 100%))
 		text-align: center
-		line-height: 32px
+		line-height: 36px
 	&:hover
 		border-color: #7dbcd1
 		box-shadow: 0 0 6px rgba(73,186,223,.45)
@@ -176,7 +186,9 @@ a
 	font-size: 16px
 	+clr
 	a, span, input
+		display: inline-block
 		margin-right: 10px
+		vertical-align: middle
 	a
 		&.is-active
 			color: $font
@@ -195,20 +207,34 @@ a
 		float: left
 		a, span
 			margin-right: 20px
+		+rt(480)
+			display: none
 	.pager__list
 		float: right
+		+rt(480)
+			float: none
+			text-align: center
 	.pager__back
 		margin-right: 25px
 		i
 			display: inline-block
 			margin-right: 15px
 			+s(pager-back)
+		+rt(480)
+			margin-right: 10px
 	.pager__next
 		margin-left: 15px
 		i
 			display: inline-block
 			margin-left: 15px
 			+s(pager-next)
+		+rt(480)
+			margin-left: 0
+	.pager__back, .pager__next
+		+rt(480)
+			font-size: 0
+			i
+				margin: 0
 	&.pager_small
 		text-align: center
 		.pager__back
@@ -319,7 +345,7 @@ a
 	height: 28px
 	+nosel
 	&.is-open	
-		z-index: 999 
+		z-index: 100
 		.select__in	
 			border: 1px solid #49badf
 			box-shadow: 0 0 4px rgba(73,186,223,.45), inset 0 1px 1px rgba(0,0,0,.25)
@@ -346,8 +372,10 @@ a
 .select__head
 	position: relative
 	height: 26px
-	padding: 0 38px 0 0
+	padding: 0 28px 0 0
 	cursor: pointer
+.select__head-in
+	overflow: hidden
 .select__arr
 	position: absolute
 	top: 0
@@ -365,14 +393,23 @@ a
 		left: 8px
 		+s(select-arr)
 .select__title
-	padding-left: 10px
+	padding: 0 10px
 	line-height: 26px
 	font-size: 14px
 	font-weight: 600 
 .select__head-list
+	position: relative
 	padding: 3px
 	white-space: nowrap
 	font-size: 0
+	&:after
+		content: ""
+		position: absolute
+		top: 3px
+		right: 0
+		bottom: 3px
+		width: 10px
+		+gh(rgba(255,255,255,0), rgba(255,255,255,1))
 	li
 		position: relative
 		display: inline-block
@@ -412,6 +449,7 @@ a
 	.checkbox
 		display: block
 		padding: 4px 12px
+		margin: 0
 		span
 			font-weight: 400 
 
@@ -447,6 +485,8 @@ a
 	+s(ico-filter)
 .ico_arrs-down
 	+s(ico-arrs-down)
+.ico_arr-down
+	+s(ico-arr-down)
 .ico_arrs-top
 	+s(ico-arrs-top)
 .ico_search
@@ -457,6 +497,8 @@ a
 	+s(ico-date)
 .ico_user
 	+s(ico-user)
+.ico_list
+	+s(ico-list)
 .ico_comm
 	+s(ico-comm)
 .ico_arr-circle
