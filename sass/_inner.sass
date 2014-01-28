@@ -273,7 +273,7 @@
 			font-weight: 600 
 			text-align: center
 			border-bottom: 1px solid #e0e0e0
-			background-color: #f3d3a9
+			background-color: #fdfdfd
 			+background-image(linear-gradient(bottom, #e7e7e7 0%, #fdfdfd 100%))
 			vertical-align: middle
 			white-space: nowrap
@@ -285,14 +285,14 @@
 				position: relative
 				top: -2px
 				margin-right: 7px
-.table__row_blue
-	.table__cell
-		background: #e7f7fc
-		&:first-child
-			padding: 12px 12px 12px 22px
-			border-left: #159BBE 4px solid  
-			+rt(480)
-				padding: 12px 0 12px 11px
+	&.table__row_blue
+		.table__cell
+			background: #e7f7fc
+			&:first-child
+				padding: 12px 12px 12px 22px
+				border-left: #159BBE 4px solid  
+				+rt(480)
+					padding: 12px 0 12px 11px
 .table__cell
 	display: table-cell
 	padding: 12px
@@ -317,8 +317,8 @@
 .table__cell_center
 	text-align: center
 	vertical-align: middle
-.table__prize, .table__green, .table__red, .table__black
-	margin-bottom: 15px
+.table__entries, .table__prize, .table__green, .table__red, .table__black
+	margin-bottom: 10px
 .table__prize
 	white-space: nowrap
 .table__prize_rt
@@ -332,6 +332,10 @@
 		line-height: 1.2
 		span
 			display: block
+.table__green,
+.table__red, 
+.table__black
+	white-space: nowrap
 .table__green
 	color: #4B933F
 .table__red
@@ -399,7 +403,7 @@
 	padding: 7px
 	font-weight: 600 
 	text-align: center
-	background-color: #f3d3a9
+	background-color: #fdfdfd
 	border-radius: 5px 5px 0 0
 	+background-image(linear-gradient(bottom, #e7e7e7 0%, #fdfdfd 100%))
 .cats__list
