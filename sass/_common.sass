@@ -130,13 +130,20 @@ a
 		border-radius: 5px 1px 1px 5px
 		background-color: #434753
 		+background-image(linear-gradient(bottom, #434753 0%, #434753 0.51%, #595b67 100%))
-		text-align: center
-		line-height: 36px
+		.ico_filter, .ico_stick
+			position: relative
+		.ico_filter
+			top: 5px
+		.ico_stick
+			top: 3px 
 	&:hover
 		border-color: #7dbcd1
 		box-shadow: 0 0 6px rgba(73,186,223,.45)
 		.btn__text
 			color: $hover 
+		.btn__block
+			border-color: #4a4d54
+			+background-image(linear-gradient(#72747e 0%, #5f626d 100%))
 		.ico_follow
 			+s(ico-follow-h)
 		.ico_arrs-down
@@ -149,14 +156,24 @@ a
 
 
 .btn-green
+	position: relative
 	height: 42px
 	padding: 0 20px
 	border-radius: 4px
-	background-color: #399729
-	+background-image(linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(255,255,255,0) 100%))
-	box-shadow: 0 4px 0 #307523 
+	background-color: #61ad54
+	+background-image(linear-gradient(top, #61ad54 0%, #3b982a 100%))
+	box-shadow: 0 4px 0 #307523
 	font-size: 20px
 	color: #fff 
+	&:hover
+		border-color: #669d47 
+		+background-image(linear-gradient(top, #669d47 0%, #4a8d28 100%))
+		box-shadow: 0 4px 0 #427322 
+	&:active
+		top: 2px
+		border-color: #669d47 
+		+background-image(linear-gradient(top, #669d47 0%, #4a8d28 100%))
+		box-shadow: 0 2px 0 #427322 
 
 
 .btn-blue
@@ -286,7 +303,7 @@ a
 		+box
 		&:focus
 			border-color: #49badf
-			box-shadow: 0 0 4px rgba(73,186,223,.45), inset 0 1px 1px rgba(0,0,0,.25)
+			box-shadow: 0 0 6px rgba(73,186,223,.45), inset 0 1px 1px rgba(0,0,0,.25)
 .field__el + .field__el
 	margin-left: 5px 
 .field_small
