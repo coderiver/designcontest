@@ -15,7 +15,7 @@
 		display: inline-block
 		+s(breadcrumbs-arr)
 		vertical-align: middle
-	+rt(480)
+	+rt(759)
 		display: none
 		
 
@@ -25,48 +25,50 @@
 	background: #FFF
 	border-radius: 5px 
 	box-shadow: 0 1px 1px rgba(0,0,0,.3) 
-	
 .filter__in
+	position: relative
 	+clr
+	+rt(759)
+		padding-top: 42px
 .filter__btn
 	float: left
 	padding: 14px 5px
-	+rt(480)
+	+rt(759)
 		padding: 5px
 	&.filter__btn_first
 		padding: 14px 5px 14px 15px 
 		border-radius: 5px 0 0 5px
-		+rt(480)
+		+rt(759)
 			display: none
 	&.is-active
 		background: #e0f1f7 
 	.btn
 		float: left
 	.filter__clear
-		+rt(480)
+		+rt(980)
 			display: none
 .filter__search
 	padding: 16px
 	float: left
-	+rt(480)
+	+rt(759)
 		float: none
 		padding: 5px
 	.field
 		float: left
 		margin-right: 15px
-		+rt(480)
+		+rt(759)
 			float: none
 			margin: 0
 			width: 100%
 	.field__el
 		position: relative
-		+rt(480)
+		+rt(759)
 			display: block
 		input
 			width: 190px
 			padding: 0 35px 0 10px 
 			background: none 
-			+rt(480)
+			+rt(759)
 				width: 100%
 				height: 32px
 		button
@@ -80,23 +82,27 @@
 	.loader
 		float: left
 		margin-right: 100px 
-		+rt(480)
+		+rt(980)
 			display: none
 .filter__search-result
 	float: left
 	margin-top: 5px
-	+rt(480)
+	+rt(980)
 		display: none
 .filter__search_right
 	float: right
-	+rt(480)
+	+rt(980)
+		float: left
+		padding: 16px 5px
+	+rt(759)
+		float: right
 		padding: 5px 5px 5px 0 
 	.field
 		margin: 0
 	.field__el
 		input
 			width: 140px
-			+rt(480)
+			+rt(759)
 				width: 145px
 	.filter__search-result
 		margin-right: 15px
@@ -138,22 +144,22 @@
 	padding: 12px 15px
 	vertical-align: middle
 	font-size: 0
-	+rt(480)
+	+rt(759)
 		padding: 5px
 	> .btn-blue
 		float: right
 		width: 140px
-		+rt(480)
+		+rt(759)
 			width: 145px
 	> .filter__clear
 		display: none
 		vertical-align: middle
-		+rt(480)
+		+rt(759)
 			display: inline-block
 			margin-left: 0
 			vertical-align: middle
 .filter__drop_list
-	+rt(480)
+	+rt(759)
 		display: none
 	.filter__cell
 		> .field, > .checkbox, > .select
@@ -163,24 +169,29 @@
 	display: inline-block
 	margin-right: 25px
 	vertical-align: middle 
-	+rt(480)
+	+rt(980)
+		margin-right: 10px
+	+rt(759)
 		margin: 0 0 25px 0
 	.field__label
-		+rt(480)
+		+rt(759)
 			display: block
 			margin: 0 0 5px
 .filter__prize
-	+rt(480)
+	+rt(980)
+		display: none
+	+rt(759)
+		display: inline-block
 		width: 140px
 		.field__el
 			input
 				width: 60px
 .filter__deadline
 	.select
-		+rt(480)
+		+rt(759)
 			width: 145px 
 .filter__status
-	+rt(480)
+	+rt(759)
 		width: 140px
 		.select
 			width: 125px
@@ -189,7 +200,9 @@
 		margin-left: 25px
 		&:first-child
 			margin: 0
-		+rt(480)
+		+rt(980)
+			margin-left: 10px
+		+rt(759)
 			display: block
 			margin: 15px 0 0 0
 			span
@@ -212,11 +225,18 @@
 			color: $hover 
 .filter__categories
 	position: relative
+	float: right
 	display: none
-	height: 38px
-	padding: 2px
+	height: 32px
+	padding: 14px 16px
 	overflow: hidden
 	z-index: 200 
+	+rt(759)
+		position: absolute
+		top: 3px
+		left: 3px
+		width: 285px
+		padding: 2px
 	.cats
 		display: none
 		margin: 0
@@ -227,27 +247,26 @@
 			&:first-child
 				border: none
 	.filter__clear
+		display: none
 		float: right
 		margin: 10px 0 0 0
+		+rt(759)
+			display: block
 	&.is-open
 		overflow: visible
 		.cats
 			display: block
 		.filter__categories-in
 			box-shadow: 0 0 0 7px #434753
-			border-radius: 4px
+			border-radius: 6px
 		.ico_arr-down
 			+rotate(180)
-	+rt(480)
+	+rt(980)
 		display: block
 .filter__categories-in
 	position: relative
 	display: inline-block
 	vertical-align: top
-.filter__categories-btn
-	padding: 3px 3px 7px
-	background: #FFF 
-	border-radius: 4px 4px 0 0
 	
 
 
@@ -291,7 +310,7 @@
 			&:first-child
 				padding: 12px 12px 12px 22px
 				border-left: #159BBE 4px solid  
-				+rt(480)
+				+rt(759)
 					padding: 12px 0 12px 11px
 .table__cell
 	display: table-cell
@@ -300,19 +319,19 @@
 	border-bottom: 1px solid #e0e0e0
 	&:first-child
 		padding: 12px 12px 12px 26px
-		+rt(480)
+		+rt(759)
 			padding: 12px 0 12px 15px 
 	.label_rt
-		+rt(480)
+		+rt(759)
 			display: none
 	.label_prize-rt
 		display: none
-		+rt(480)
+		+rt(759)
 			display: inline-block
 			margin-bottom: 15px 
 			white-space: nowrap
 .table__cell_rt
-	+rt(480)
+	+rt(759)
 		display: none
 .table__cell_center
 	text-align: center
@@ -322,11 +341,11 @@
 .table__prize
 	white-space: nowrap
 .table__prize_rt
-	+rt(480)
+	+rt(759)
 		display: none
 .table__black_rt
 	display: none
-	+rt(480)
+	+rt(759)
 		display: block
 		font-size: 13px
 		line-height: 1.2
@@ -343,7 +362,7 @@
 .table__text
 	margin-bottom: 10px
 	line-height: 1.2
-	+rt(480)
+	+rt(759)
 		display: none
 .table__date, .table__user
 	+clr
@@ -353,7 +372,7 @@
 		&:first-child
 			float: left
 			margin: 0
-		+rt(480)
+		+rt(759)
 			float: none
 			display: block
 			margin: 0
@@ -363,11 +382,11 @@
 	margin-bottom: 5px
 .table__user
 	margin-bottom: 10px
-	+rt(480)
+	+rt(759)
 		display: none
 .table__pics
 	font-size: 0
-	+rt(480)
+	+rt(759)
 		display: none
 	li
 		position: relative
