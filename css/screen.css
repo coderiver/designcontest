@@ -132,7 +132,7 @@ a:hover { color: #0a96bb; text-decoration: underline; }
 
 .select_100 { width: 100px; }
 
-.select__in { border-radius: 4px; background: white; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 0 3px rgba(168, 168, 168, 0.6); border: 1px solid #b8b8b8; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.select__in { position: relative; border-radius: 4px; background: white; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 0 3px rgba(168, 168, 168, 0.6); border: 1px solid #b8b8b8; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .select__head { position: relative; height: 26px; padding: 0 28px 0 0; cursor: pointer; }
 
@@ -155,6 +155,8 @@ a:hover { color: #0a96bb; text-decoration: underline; }
 .select__list .checkbox { display: block; padding: 4px 12px; margin: 0; }
 .select__list .checkbox span { font-weight: 400; }
 
+.select__el { position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-appearance: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; z-index: 2; }
+
 .loader { font-size: 0; }
 
 .el-with-ico { display: inline-block; vertical-align: middle; }
@@ -162,7 +164,8 @@ a:hover { color: #0a96bb; text-decoration: underline; }
 .el-with-ico a, .el-with-ico span { vertical-align: middle; }
 .el-with-ico a + .ico, .el-with-ico span + .ico { margin: 0 0 0 5px; }
 
-.el-with-ico_btn { min-height: 17px; background: none; }
+.el-with-ico_btn { min-height: 18px; background: none; font-size: 0; }
+.el-with-ico_btn span { font-size: 14px; }
 
 .ico { display: inline-block; vertical-align: middle; }
 

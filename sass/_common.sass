@@ -382,6 +382,7 @@ a
 .select_100
 	width: 100px
 .select__in	
+	position: relative
 	border-radius: 4px
 	background: #FFF 
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.25), inset 0 0 3px rgba(168,168,168,.6)
@@ -471,6 +472,15 @@ a
 		margin: 0
 		span
 			font-weight: 400 
+.select__el
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	-webkit-appearance: none
+	+opacity(0)
+	z-index: 2 
 
 
 
@@ -492,8 +502,11 @@ a
 		& + .ico
 			margin: 0 0 0 5px
 .el-with-ico_btn
-	min-height: 17px
+	min-height: 18px
 	background: none 
+	font-size: 0
+	span
+		font-size: 14px
 .ico
 	display: inline-block
 	vertical-align: middle
