@@ -45,9 +45,10 @@ a:hover { color: #0a96bb; text-decoration: underline; }
 .btn .btn__text + .ico { margin-left: 10px; }
 .btn .ico + .btn__text { margin-left: 10px; }
 .btn .btn__block { position: absolute; top: -1px; left: -1px; width: 38px; height: 30px; border: 1px solid #2f313b; border-radius: 5px 1px 1px 5px; background-color: #434753; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #434753), color-stop(0.51%, #434753), color-stop(100%, #595b67)); background-image: -webkit-linear-gradient(bottom, #434753 0%, #434753 0.51%, #595b67 100%); background-image: -moz-linear-gradient(bottom, #434753 0%, #434753 0.51%, #595b67 100%); background-image: -o-linear-gradient(bottom, #434753 0%, #434753 0.51%, #595b67 100%); background-image: linear-gradient(bottom, #434753 0%, #434753 0.51%, #595b67 100%); }
-.btn .btn__block .ico_filter, .btn .btn__block .ico_stick { position: relative; }
+.btn .btn__block .ico { position: relative; }
 .btn .btn__block .ico_filter { top: 5px; }
 .btn .btn__block .ico_stick { top: 3px; }
+.btn .btn__block .ico_list { top: 7px; }
 .btn:hover { border-color: #7dbcd1; box-shadow: 0 0 6px rgba(73, 186, 223, 0.45); }
 .btn:hover .btn__text { color: #0a96bb; }
 .btn:hover .btn__block { border-color: #4a4d54; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72747e), color-stop(100%, #5f626d)); background-image: -webkit-linear-gradient(#72747e 0%, #5f626d 100%); background-image: -moz-linear-gradient(#72747e 0%, #5f626d 100%); background-image: -o-linear-gradient(#72747e 0%, #5f626d 100%); background-image: linear-gradient(#72747e 0%, #5f626d 100%); }
